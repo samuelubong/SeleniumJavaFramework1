@@ -18,7 +18,7 @@ public class saucelabsgood {
 		ChromeOptions browserOptions = new ChromeOptions();
 		browserOptions.setPlatformName("Windows 11");
 		browserOptions.setBrowserVersion("latest");
-		Map<String, Object> sauceOptions = new HashMap<>();
+		Map<String, Object> sauceOptions = new HashMap<String, Object>();
 		sauceOptions.put("build", "<1.0.1>");
 		sauceOptions.put("name", "<First Google Automated Test>");
 		browserOptions.setCapability("sauce:options", sauceOptions);
